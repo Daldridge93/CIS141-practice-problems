@@ -28,7 +28,7 @@ Slice the word at the indexes provided by the user and print to the screen.'''
 
 word2 = input("Please provide a word: ")
 index1 = int(input("Please provide the first index: "))
-index2 = int(input("Please provide the first index: "))
+index2 = int(input("Please provide the second index: "))
 
 print(word2[index1:index2])
 
