@@ -7,7 +7,7 @@
 #output: count
 #Function body: lowercase cv, all vowels as a variable, set up counter with for loop. use return to get count.
 
-'''def count_vowels(cv):
+def count_vowels(cv):
     cv = cv.lower()
     vowels = "aeiou"
     count = 0
@@ -17,7 +17,7 @@
     return count
 
 print(count_vowels("Demasha"))
-print(count_vowels("forest"))'''
+print(count_vowels("forest"))
 
 '''
 #2. Write a function called is_palindrome(s) that checks whether a string is a palindrome
@@ -28,14 +28,14 @@ print(count_vowels("forest"))'''
 #Input: string (s)
 #Output: boolean
 #Function body: lowercase s, flip s and save to new variable(flipped_s), an then compare s & flipped_s
-'''def is_palindrome(s):
+def is_palindrome(s):
     lower_s = s.lower()
     flipped_s = lower_s[::-1]
     return lower_s == flipped_s
 
 print(is_palindrome("racecar"))
 print(is_palindrome("pikachu"))
-print(is_palindrome("Racecar"))'''
+print(is_palindrome("Racecar"))
 
 '''
 #3. In the game Pokemon, certain types of Pokemon do extra damage to other types.
@@ -51,7 +51,7 @@ print(is_palindrome("Racecar"))'''
 #input: string
 #output: string
 #Function body: else and elif statements providing effectiveness. use return to determine effectiveness.
-'''
+
 def type_advantage(attacker,defender):
     if attacker == "Water" and defender == "Fire":
         return "Super Effective"
@@ -63,7 +63,7 @@ def type_advantage(attacker,defender):
 print(type_advantage("Water", "Fire"))  # "Super Effective"
 print(type_advantage("Fire", "Water"))  # "Not Very Effective"
 print(type_advantage("Electric", "Grass"))  # "Neutral"
-'''
+
 '''
 #4. Write a function called ferry_fare(age, vehicle) that calculates the Washington State Ferry fare
     based on age and whether the person has a vehicle. Assume the following rates:
@@ -75,7 +75,7 @@ print(type_advantage("Electric", "Grass"))  # "Neutral"
 #Input:int & boolean
 #Output: int
 #Function body: if, elif, else statements that capture age and if vehicle. use return to display correct price.
-'''def ferry_fare(age,vehicle):
+def ferry_fare(age,vehicle):
     if age >= 19 and age <= 64:
         if vehicle:
             return 20
@@ -93,7 +93,7 @@ print(type_advantage("Electric", "Grass"))  # "Neutral"
         return "free"
 
 print(ferry_fare(70, True))
-print(ferry_fare(20, False))'''
+print(ferry_fare(20, False))
 '''
 #5. Write a function called level_up(experience) that takes a player's experience points
     and returns their new level based on these rules:
@@ -105,7 +105,7 @@ print(ferry_fare(20, False))'''
 #input: int
 #output: string
 #function body: utilize if and elif statements. capture xp in ranges and determine level with a return.
-'''def level_up(experience):
+def level_up(experience):
     if experience >=0 and experience <= 99:
         return "Level 1"
 
@@ -115,4 +115,6 @@ print(ferry_fare(20, False))'''
     elif experience >=200:
         return "Level 3"
 
-print(level_up(199))'''
+print(level_up(199))
+print(level_up(50))
+print(level_up(300))
